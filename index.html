@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple</title>
+    <!-- Box-icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Style.css -->
+    <link rel="stylesheet" href="apple.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#"><i class="bx bxl-apple"></i></a>
+          </li>
+          <li><a href="#" class="menu-item">Mac</a></li>
+          <li><a href="#" class="menu-item">iPhone</a></li>
+          <li><a href="#" class="menu-item">iPad</a></li>
+          <li><a href="#" class="menu-item">iWatch</a></li>
+          <li><a href="#" class="menu-item">Tv</a></li>
+          <li><a href="#" class="menu-item">Support</a></li>
+          <li>
+            <a href="#" id="search"><i class="bx bx-search"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-cart"></i></a>
+          </li>
+        </ul>
+        <div class="search-form">
+          <form>
+            <input type="text" name="" placeholder="Search apple.com" />
+          </form>
+        </div>
+        <a href="#" class="close"><i class="bx bx-x"></i></a>
+      </div>
+    </nav>
+    <div class="banner"></div>
+    <section>
+      <div class="imgBx">
+        <img
+          src="https://www.apple.com/v/home/bq/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_medium_2x.jpg"
+          class="medium"
+          alt=""
+        />
+      </div>
+      <div class="content">
+        <h2>Apple Watch</h2>
+        <p>
+          iPhone 15 Pro is the first iPhone to support USB 3,4 for a huge leap
+          in data transfer speeds and faster pro workflows than ever before. The
+          new USB‑C connector lets you charge your Mac or iPad with the same
+          cable you use to charge iPhone 15 Pro. Bye‑bye, cable clutter.
+        </p>
+        <br /><br />
+        <p>
+          iPhone 15 Pro is the first iPhone to feature an aerospace‑grade
+          titanium design, using the same alloy that spacecraft use for missions
+          to Mars. Titanium has one of the best strength‑to‑weight ratios of any
+          metal, making these our lightest Pro models ever. You’ll notice the
+          difference the moment you pick one up. <br /><br />
+        </p>
+        <input type="submit" value="Buy Now" />
+      </div>
+    </section>
+    <section>
+      <div class="imgBx">
+        <img
+          src="https://www.apple.com/v/macbook-air/s/images/overview/hero/hero_static__c9sislzzicq6_small_2x.jpg"
+          class="medium"
+          alt=""
+        />
+      </div>
+      <div class="content">
+        <h2>MacBook</h2>
+        <p>
+          MacBook Air sails through work and play — and the M3 chip brings even
+          greater capabilities to the world’s most popular laptop. With up to 18
+          hours of battery life,1 you can take the super-portable MacBook Air
+          anywhere and blaze through whatever you’re into.
+        </p>
+        <br /><br />
+        <p>
+          Super light and just over 1 cm thin, MacBook Air fits easily into your
+          life and is built with the planet in mind. MacBook Air with M3 is made
+          with 50% recycled materials — an Apple first. And all MacBook Air
+          laptops have a durable recycled aluminium enclosure. Two perfectly
+          portable sizes. The 34.46 cm (13.6″) model is the ultimate on‑the‑go
+          laptop, and the 38.91 cm (15.3″) model gives you more space onscreen
+          for multitasking.2
+
+          <br /><br />
+        </p>
+        <input type="submit" value="Buy Now" />
+      </div>
+    </section>
+    <section>
+      <div class="imgBx">
+        <img
+          src="https://www.apple.com/v/apple-watch-series-9/d/images/overview/design/design_brightness_bright__f0qot4cow8q6_small_2x.jpg"
+          class="medium"
+          alt=""
+        />
+      </div>
+      <div class="content">
+        <h2>Apple Watch</h2>
+        <p>
+          Our most powerful chip in Apple&nbsp;Watch ever. A magical way to use
+          your&nbsp;Apple&nbsp;Watch without touching the&nbsp;screen. A display
+          that’s twice as bright. And now you can choose a&nbsp;watch&nbsp;case
+          and strap combination that’s carbon&nbsp;neutral.
+        </p>
+        <br /><br />
+        <p>
+          Apple Watch helps you better understand your mental and physical
+          health. Health data is kept private and secure. And when you’re ready
+          to share with a healthcare provider, friends or family members, you’re
+          in control. <br /><br />
+        </p>
+        <input type="submit" value="Buy Now" />
+      </div>
+    </section>
+
+    <!-- script -->
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#search").click(function () {
+          $(".menu-item").addClass("hide-item");
+          $(".search-form").addClass("active");
+          $(".close").addClass("active");
+          $("#search").hide();
+        });
+
+        $(".close").click(function () {
+          $(".menu-item").removeClass("hide-item");
+          $(".search-form").removeClass("active");
+          $(".close").removeClass("active");
+          $("#search").show();
+        });
+      });
+    </script>
+  </body>
+</html>
